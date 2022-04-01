@@ -1,5 +1,6 @@
 package com.techreturners.cats;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -20,7 +21,7 @@ public class CatTest {
     }
 
     @Test
-    public void checkCatCanWakep() {
+    public void checkCatCanWakeUp() {
         Cat domesticCat = new DomesticCat();
         domesticCat.goToSleep();
         domesticCat.wakeUp();
@@ -58,9 +59,27 @@ public class CatTest {
         assertEquals("Zzzzzzz", cheetahCat.eat());
     }
 
-    @Test
+    @Ignore
     public void feedTheCat() {
         Cat domesticCat = new DomesticCat();
         assertEquals("Purrrrrrr", domesticCat.eat());
+    }
+
+    @Ignore
+    public void feedAnotherCat() {
+        Cat anotherDomesticCat = new DomesticCat();
+        assertEquals("It will do I suppose", anotherDomesticCat.eat());
+    }
+
+    @Ignore
+    public void feedTheOtherCat() {
+        Cat theOtherCat = new DomesticCat();
+        assertEquals("It will do I suppose", theOtherCat.eat());
+    }
+
+    @Ignore
+    public void feedDifferentCat() {
+        Cat differentCat = new DomesticCat();
+        assertEquals("It will do I suppose", differentCat.eat());
     }
 }
